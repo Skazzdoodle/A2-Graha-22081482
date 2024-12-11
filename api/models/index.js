@@ -20,8 +20,8 @@ db.Sequelize = Sequelize;
 db.sequelize = sequelize;
 
 /* Create database tables and models */
-db.contacts = require("./contact.model.js")(sequelize, Sequelize);
-db.phones = require("./phone.model.js")(sequelize, Sequelize);
-db.companies = require("./company.model.js")(sequelize, Sequelize);
+db.customers = require("./customers.js")(sequelize, Sequelize);
+db.items = require("./item.model.js")(sequelize, Sequelize);
+db.orders = require("./orders.js")(sequelize, Sequelize);
 
 module.exports = db;
