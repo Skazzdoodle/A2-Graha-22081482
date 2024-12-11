@@ -1,8 +1,27 @@
 import Company from "./Company.js";
 import NewCompany from "./NewCompany.js";
+import { useState, useEffect } from 'react';
 
 function CompanyList(props) {
     const { contact, companies, setCompanies } = props;
+    useEffect(() => {
+        // Fetch companies for the contact when the component mounts
+        const fetchCompanies = async () => {
+            try {
+                const response = await fetch(`http://localhost/api/contacts/${contact.id}/companies`);
+                if (response.ok) {
+                    const data = await response.json();
+                    setCompanies(data);
+                } else {
+                    console.error("Failed to fetch companies");
+                }
+            } catch (error) {
+                console.error("Error fetching companies:", error);
+            }
+        };
+
+        fetchCompanies();
+    }, [contact.id]);
 
 	return (
         <div
