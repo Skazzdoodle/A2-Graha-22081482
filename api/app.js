@@ -8,7 +8,7 @@ var corsOptions = {
 };
 
 const db = require("./models");
-db.sequelize.sync({ force: false }).then(() => {
+db.sequelize.sync({ alter: true }).then(() => {
     console.log("Drop and re-sync db.");
 });
 

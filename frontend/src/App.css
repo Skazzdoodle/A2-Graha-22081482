@@ -20,14 +20,14 @@
 }
 .contact > .title {
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    flex-direction: column;
+    align-items: left;
     justify-content: space-between;
     width: 100%;
 }
 .contact > .title > h3 {
     margin: 0px;
-    text-align: center;
+    text-align: left;
 }
 
 .button {
