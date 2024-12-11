@@ -34,3 +34,11 @@ Graha's shared repository: https://github.com/Skazzdoodle/A2-Graha-22081482.git
 
 ## task 5
 1. Frontend of task 5: ![alt text](<Task5/Screenshot 2024-12-11 202036.png>)
+
+## task 6
+1. customer controller: ![alt text](<TASK6/Screenshot (170).png>)
+2. item controller: ![alt text](<TASK6/Screenshot (171).png>)
+3. order controller: ![alt text](<TASK6/Screenshot (172).png>)
+4. customer model: ![alt text](<TASK6/Screenshot (172).png>)
+5. item model: ![alt text](<TASK6/Screenshot (174).png>)
+6. order model: ![alt text](<TASK6/Screenshot (175).png>)
